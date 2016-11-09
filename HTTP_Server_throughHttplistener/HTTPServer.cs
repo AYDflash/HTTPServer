@@ -12,9 +12,9 @@ namespace HTTP_Server_throughHttplistener
     class HTTPServer
     {
 
-        HttpListener server;
-        string name;
-        bool flag = true;
+        private HttpListener server;
+        private string name;
+        private bool flag = true;
 
         public  void StartServer(string prefix)
         {
