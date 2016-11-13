@@ -90,13 +90,13 @@ namespace HTTP_Server_throughHttplistener
                     //Выполнение задачи
                     string[] arr = text.Split(' ');
                     int[] array = new int[arr.Length];
-                    int summ = 0;
+                    double summ = 0;
 
                     for (int i = 0; i < arr.Length; i++)
                     {
                         
                         array[i] = Convert.ToInt32(arr[i]);
-                        summ += array[i];
+                        summ += (1.0*array[i]/arr.Length);
                     }
                     text = Convert.ToString(summ);
                     Console.WriteLine("Среднее значение: {0}", text);
